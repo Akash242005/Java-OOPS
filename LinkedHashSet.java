@@ -28,5 +28,7 @@ public class Main{
         }
         System.out.println();
         System.out.println("The hash1 is present in the hash1 or not : "+hash.contains(hash1));
+        hash.retainAll(hash1);
+        System.out.println("The intersection of the two set is : "+hash);
     }
 }
