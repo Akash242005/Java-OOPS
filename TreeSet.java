@@ -8,6 +8,9 @@ public class Main{
         tree.add(10);
         tree.add(90);
         tree.add(4);
+        tree.add(109);
+        tree.add(130);
+        tree.add(190);
         System.out.println("The TreeSet is : "+tree);
         System.out.println("The first element : "+tree.first());
         System.out.println("The last element is : "+tree.last());
@@ -18,5 +21,26 @@ public class Main{
         System.out.println("The headSet of 16 is : "+tree.headSet(16));
         System.out.println("The tailSet of 16 : "+tree.tailSet(16));
         System.out.println("The subSet of the set is : "+tree.subSet(10, 50));
+        System.out.println("Contains 40 : "+tree.contains(40));
+        System.out.println("The PollFirst method : "+tree.pollFirst());
+        System.out.println("The set after using the PollFirst : "+tree);
+        System.out.println("The PollLast method : "+tree.pollLast());
+        System.out.println("The set after using the PollLast : "+tree);
+        Iterator<Integer> iterator = tree.iterator();
+        System.out.print("The iterator in the tree : ");
+        while(iterator.hasNext())
+        {
+            System.out.print(iterator.next()+" ");
+        }
+        System.out.println();
+        Object[] array = tree.toArray();
+        System.out.print("The elements in the tree using array : ");
+        for(Object obj:array)
+        {
+            System.out.print(obj+" ");
+        }
+        System.out.println();
+        tree.addAll(Arrays.asList(1,3,2));
+        System.out.println("The elements after adding using addAll : "+tree);
     }
 }
