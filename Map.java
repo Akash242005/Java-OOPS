@@ -7,6 +7,7 @@ public class MapExample {
         playerScore.put("Rohit", 45);
         playerScore.put("Virat", 75);
         playerScore.put("Dhoni", 97);
+        playerScore.put("Cahal", 99);
         System.out.println("After Put(): " + playerScore);
         Map<String, Integer> additionalScores = new HashMap<>();
         additionalScores.put("Bumrah", 32);
@@ -38,6 +39,10 @@ public class MapExample {
         {
             System.out.println(m.getKey()+" : "+m.getValue());
         }
+        List<Map.Entry<String,Integer>> list = new ArrayList<>(playerScore.entrySet());
+        List<Map.Entry<String,Integer>> list1 = new ArrayList<>(entries);
+        System.out.println("The map changed to list : "+list);
+        System.out.println("When the set is changed to the list : "+list1);
 
 
     }
