@@ -6,7 +6,7 @@ class gen<T>{
     public void setRollno(T rollno) {
         this.rollno = rollno;
     }
-}
+} 
 
 public class Main {
     public static void main(String[] args) {
