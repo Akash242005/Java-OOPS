@@ -5,7 +5,7 @@ class employee{
 	private double salary;
 	public employee(int id,String name,double salery)
 	{
-		this.id = id;
+		this.id = id; 
 		this.name = name;
 		this.salary = salery;
 	}
